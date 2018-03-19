@@ -1,0 +1,80 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="description" content="Facebook Oauth2 login using Spring Boot">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <meta name="author" content="Akshay Thorve">
+  <title>Facebook Oauth2 login using Spring Boot</title>
+  <!-- Latest compiled and minified CSS -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+
+  <!-- jQuery library -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+  <!-- Latest compiled JavaScript -->
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+</head>
+
+<body>
+  <div align="center">
+    <div class="unauthenticated">
+      <h3>Login using facebook  </h3>
+      <a class="btn btn-primary" href="/login">Facebook Login</a>
+      <br><br>
+    </div>
+    <div class="authenticated" style="display: none">
+      <h2>You have successfully logged in using Facebook.</h2> <br> Logged in as: <strong><span id="user"></span></strong><br> User ID: <strong><span id="id"></span></strong>
+      <div>
+        <br>
+        <button onClick="logout()" class="btn btn-warning">Logout</button>
+        <br><br>
+      </div>
+    </div>
+  </div>
+
+
+
+  <div align="center">
+
+    <div class="col-md-12">
+      <p class="copyright-text">
+        Made with <span style="color: #e25555;">&#9829;</span> by
+        <a target="_blank" href="https://akshaythorve.com/">
+                      Akshay Thorve
+                    </a>
+      </p>
+
+    </div>
+  </div>
+
+  <script src="js/jquery-2.1.4.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+
+  <script>
+    if (window.location.hash == '#_=_') {
+      history.replaceState ?
+        history.replaceState(null, null, window.location.href.split('#')[0]) :
+        window.location.hash = '';
+    }
+    $.get("/user", function(data) {
+      $("#user").html(data.userAuthentication.details.name);
+      $("#id").html(data.userAuthentication.details.id);
+      $(".unauthenticated").hide()
+      $(".authenticated").show()
+    });
+    var logout = function() {
+      $.post("/logout", function() {
+        $("#user").html('');
+        $("#id").html('');
+        $(".unauthenticated").show();
+        $(".authenticated").hide();
+      });
+      return true;
+    }
+  </script>
+</body>
+
+</html>
