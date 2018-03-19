@@ -1,5 +1,7 @@
 # Facebook Oauth2 login using Spring Boot
 
+Simple Facebook OAuth 2 authentication application with Login and Logout. This app can be intigrated with any Java, Spring or backend framework. You can extend this as per your needs.   
+
 ## Spring Boot, OAuth2 Authentication, Facebook API
 
 
@@ -26,8 +28,9 @@
 ```bash
 mvn spring-boot:run
 ```
+The application will start at <http://localhost:8080>.
 
-### Snapshots
+## Snapshots
 
 ```
 Landing page
@@ -49,6 +52,6 @@ Callback to base URL after successful authentication
 ```
 <img src="src/main/resources/static/images/callback_successful_login.png" width="60%" >
 
+Feel free to use the code.
 
 
-The application will start at <http://localhost:8080>.
