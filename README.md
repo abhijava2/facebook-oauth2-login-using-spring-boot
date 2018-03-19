@@ -21,10 +21,10 @@
 ** 2. Change application.yml file  **
  Change file with your clientId and clientSecret.
 
-** 2. Build and run the backend app using maven**
+** 3. Build and run the backend app using maven**
 
 ```bash
 mvn spring-boot:run
 ```
 
-The backend server will start at <http://localhost:8080>.
+The application will start at <http://localhost:8080>.
