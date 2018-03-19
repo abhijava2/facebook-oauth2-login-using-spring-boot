@@ -32,22 +32,22 @@ mvn spring-boot:run
 ```
 Landing page
 ```
-<img src="src/main/resources/static/images/login.png" width="50%" >
+<img src="src/main/resources/static/images/login.png" width="60%" >
 
 ```
 Facebook API RESTful call
 ```
-<img src="src/main/resources/static/images/facebook_API_Call.png" width="70%" >
+<img src="src/main/resources/static/images/facebook_API_Call.png" width="80%" >
 
 ```
 API authentication on Facebook
 ```
-<img src="src/main/resources/static/images/facebook_app_authentication.png" width="70%" >
+<img src="src/main/resources/static/images/facebook_app_authentication.png" width="80%" >
 
 ```
 Callback to base URL after successful authentication
 ```
-<img src="src/main/resources/static/images/callback_successful_login.png" width="50%" >
+<img src="src/main/resources/static/images/callback_successful_login.png" width="60%" >
 
 
 
