@@ -30,19 +30,25 @@ mvn spring-boot:run
 ### Snapshots
 
 ```
-Website UI
+Landing page
 ```
-<img src="src/main/resources/static/images/login.png" width="100%" >
+<img src="src/main/resources/static/images/login.png" width="50%" >
 
 ```
-Bracket Editor + AEM + Synchronization 
+Facebook API RESTful call
 ```
-<img src="images/Bracket+AEM.png" width="100%" >
+<img src="src/main/resources/static/images/facebook_API_Call.png" width="70%" >
 
 ```
-CRXDE|Lite Setup
+API authentication on Facebook
 ```
-<img src="images/CRXDE-Lite.png" width="100%" >
+<img src="src/main/resources/static/images/facebook_app_authentication.png" width="70%" >
+
+```
+Callback to base URL after successful authentication
+```
+<img src="src/main/resources/static/images/callback_successful_login.png" width="50%" >
+
 
 
 The application will start at <http://localhost:8080>.
