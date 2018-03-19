@@ -1,8 +1,7 @@
-# Behavioral Analytics Web Application
+# Facebook Oauth2 login using Spring Boot
 
-## Spring Boot, MongoDB, Mustache (Template system)
+## Spring Boot, OAuth2 Authentication, Facebook API
 
-Facebook Oauth2 login using Spring Boot
 
 ## Requirements
 
@@ -10,25 +9,19 @@ Facebook Oauth2 login using Spring Boot
 
 2.  Maven - 3.x.x
 
-3.  MongoDB - 3.x.x
+3.  Spring 5, Spring Boot
 
-4.  Spring 5, Spring Boot
+4.  Facebook developer App
 
-5.  Mustache - 0.9.0
 
 ## Steps to Setup
 
 ** 1. Clone the application repo **
 
+** 2. Change application.yml file  **
+ Change file with your clientId and clientSecret.
+
 ** 2. Build and run the backend app using maven**
-
-```bash
-cd spring-boot-backend
-mvn package
-java -jar target/build-1.0.0.jar
-```
-
-Alternatively, you can run the app without packaging it using
 
 ```bash
 mvn spring-boot:run
