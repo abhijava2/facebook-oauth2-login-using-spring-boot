@@ -27,4 +27,22 @@
 mvn spring-boot:run
 ```
 
+### Snapshots
+
+```
+Website UI
+```
+<img src="src/main/resources/static/images/login.png" width="100%" >
+
+```
+Bracket Editor + AEM + Synchronization 
+```
+<img src="images/Bracket+AEM.png" width="100%" >
+
+```
+CRXDE|Lite Setup
+```
+<img src="images/CRXDE-Lite.png" width="100%" >
+
+
 The application will start at <http://localhost:8080>.
